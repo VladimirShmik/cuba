@@ -1,0 +1,232 @@
+/*products-pages*/
+.product-bg {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &--cloud {
+    padding: 100px 0;
+    background-image: url("../img/bg-images/products-bg-1.png");
+  }
+
+  &--company {
+    padding: 100px 0;
+    background-image: url("../img/bg-images/company-bg.png");
+  }
+  &--services-1 {
+    padding: 100px 0;
+    background-image: url("../img/bg-images/services-1-bg.jpg");
+  }
+  &--services-2 {
+    padding: 100px 0;
+    background-image: url("../img/bg-images/services-2-bg.jpg");
+  }
+  &--services-3 {
+    padding: 100px 0;
+    background-image: url("../img/bg-images/services-3-bg.jpg");
+  }
+  &--iot-agro {
+    padding: 100px 0;
+    background-image: url("../img/bg-images/iot-agro-bg.jpg");
+  }
+  &--iot-monitoring {
+    padding: 100px 0;
+    background-image: url("../img/bg-images/iot-monitoring-bg.jpg");
+  }
+  &--iot-health {
+    padding: 100px 0;
+    background-image: url("../img/bg-images/iot-monitoring-bg.jpg");
+  }
+  &--iot-school {
+    padding: 100px 0;
+    background-image: url("../img/bg-images/iot-school-bg.jpg");
+  }
+  &--iot-mining {
+    padding: 100px 0;
+    background-image: url("../img/bg-images/iot-mining-bg.jpg");
+  }
+  &--iot-office {
+    padding: 100px 0;
+    background-image: url("../img/bg-images/iot-office-bg.jpg");
+  }
+}
+
+.product-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 600px;
+    margin-bottom: 25px;
+    &--2{
+      max-width: 100%;
+    }
+    &--3{
+      max-width: 885px;
+    }
+    &--4{
+      max-width: 550px;
+    }
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+
+    &--1 {
+      max-width: 500px;
+    }
+
+    &--2 {
+      max-width: 790px;
+    }
+
+    &--3 {
+      max-width: 1015px;
+      @media(min-width: 320px) and (max-width: 992px) {
+        max-width: 300px;
+      }
+    }
+  }
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+  margin-top: 70px;
+  margin-bottom: 80px;
+}
+
+.product-item {
+  display: flex;
+  flex-direction: column;
+  padding: 70px 30px;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+
+  &__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 39px;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    max-width: 430px;
+  }
+
+  &__img {
+    position: absolute;
+    right: -115px;
+    top: 50px;
+    z-index: 1;
+  }
+
+  &--grey {
+    background: #E8E8E8;
+
+    .product-item__title {
+      color: #292D32;
+    }
+
+    .product-item__text {
+      color: #292D32;
+    }
+  }
+
+  &--blue {
+    background: #2C5BDB;
+
+    .product-item__title {
+      color: #FFFFFF;
+    }
+
+    .product-item__text {
+      color: #FFFFFF;
+    }
+  }
+}
+
+.form-bg {
+  background-color: #2C5BDB;
+  background-image: url("../img/bg-images/form-bg.png");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.product-form {
+  background: #F2F2F2;
+  display: flex;
+  margin: 55px 0;
+  flex-direction: column;
+  padding: 30px 35px 40px;
+  border-radius: 20px;
+
+  &__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 39px;
+    color: #292D32;
+    margin-bottom: 25px;
+  }
+
+  &__btn {
+    background: #2C5BDB;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 15px 0;
+    color: #FFFFFF;
+  }
+
+  .form-block {
+    display: grid;
+    grid-row-gap: 10px;
+    margin-bottom: 25px;
+
+    &__input {
+      background: #FFFFFF;
+      border-radius: 10px;
+      width: 100%;
+      padding: 13px 16px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 140%;
+      color: #292D32;
+
+      &::placeholder {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 140%;
+        color: #292D32;
+      }
+    }
+  }
+
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 16px;
+
+  }
+}

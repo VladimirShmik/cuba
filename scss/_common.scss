@@ -1,0 +1,19 @@
+.main-wrapper{
+  display: flex;
+  flex-direction: column;
+  &__title{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    color: #292D32;
+    margin-top: 60px;
+  }
+}
+.breadcrumb-item{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-decoration-line: underline;
+  color: #292D32;
+
+}

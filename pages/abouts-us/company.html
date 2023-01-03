@@ -1,0 +1,784 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cuba</title>
+    <link rel="stylesheet" href="/scss/bootstrap.min.css">
+    <link rel="stylesheet" href="/scss/main.css">
+</head>
+<body>
+<!--header-->
+<header class="header">
+    <div class="header-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="header-menu">
+                        <a href="/" class="header-logo">
+                            <img src="/img/icons/logo-img.png" alt="" class="header-logo__img">
+                        </a>
+                        <nav class="header-nav d-none d-lg-flex">
+                            <div class="dropdown nav-item">
+                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Продукты
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <div class="product-menu">
+                                        <ul class="soft-menu">
+                                            <li class="soft-menu__title">Soft</li>
+                                            <li class="soft-item">
+                                                <a class="soft-link" href="#">
+                                                    <svg class="soft-link__icon">
+                                                        <use xlink:href="/img/sprite.svg#cloud-icon"></use>
+                                                    </svg>
+                                                    <p class="soft-link__text">Облачные решения</p>
+                                                </a>
+                                            </li>
+                                            <li class="soft-item">
+                                                <a class="soft-link" href="#">
+                                                    <svg class="soft-link__icon">
+                                                        <use xlink:href="/img/sprite.svg#monitoring-icon"></use>
+                                                    </svg>
+                                                    <p class="soft-link__text">Локальный мониторинг</p>
+                                                </a>
+                                            </li>
+                                            <li class="soft-item">
+                                                <a class="soft-link" href="#">
+                                                    <svg class="soft-link__icon">
+                                                        <use xlink:href="/img/sprite.svg#proxi-icon"></use>
+                                                    </svg>
+                                                    <p class="soft-link__text">Прокси-клиенты</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="hardware-menu">
+                                            <li class="hardware-menu__title">Hardware</li>
+                                            <li class="hardware-item">
+                                                <a class="hardware-link" href="#">
+                                                    <svg class="hardware-link__icon">
+                                                        <use xlink:href="/img/sprite.svg#sensors-icon"></use>
+                                                    </svg>
+                                                    <p class="hardware-link__text">Датчики</p>
+                                                </a>
+                                            </li>
+                                            <li class="hardware-item">
+                                                <a class="hardware-link" href="#">
+                                                    <svg class="hardware-link__icon">
+                                                        <use xlink:href="/img/sprite.svg#ports-icon"></use>
+                                                    </svg>
+                                                    <p class="hardware-link__text">Шлюзы</p>
+                                                </a>
+                                            </li>
+                                            <li class="hardware-item">
+                                                <a class="hardware-link" href="#">
+                                                    <svg class="hardware-link__icon">
+                                                        <use xlink:href="/img/sprite.svg#servers-icon"></use>
+                                                    </svg>
+                                                    <p class="hardware-link__text">Серверы</p>
+                                                </a>
+                                            </li>
+                                            <li class="hardware-item">
+                                                <a class="hardware-link" href="#">
+                                                    <svg class="hardware-link__icon">
+                                                        <use xlink:href="/img/sprite.svg#controllers-icon"></use>
+                                                    </svg>
+                                                    <p class="hardware-link__text">Контроллеры</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <hr class="product-hr">
+                                    <ul class="additional-menu">
+                                        <li class="additional-item">
+                                            <a class="additional-link" href="#">
+                                                <svg class="additional-link__icon">
+                                                    <use xlink:href="/img/sprite.svg#customs-icon"></use>
+                                                </svg>
+                                                <p class="additional-link__text">Кастомные решения</p>
+                                            </a>
+                                        </li>
+                                        <li class="additional-item">
+                                            <a class="additional-link" href="#">
+                                                <svg class="additional-link__icon">
+                                                    <use xlink:href="/img/sprite.svg#tariffs-icon"></use>
+                                                </svg>
+                                                <p class="additional-link__text">Тарифы</p>
+                                            </a>
+                                        </li>
+                                        <li class="additional-item">
+                                            <a class="additional-link" href="#">
+                                                <svg class="additional-link__icon">
+                                                    <use xlink:href="/img/sprite.svg#demo-icon"></use>
+                                                </svg>
+                                                <p class="additional-link__text">Смотреть демо</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                            <div class="dropdown nav-item">
+                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Сервисы
+                                </button>
+                                <ul class="dropdown-menu services-menu" aria-labelledby="dropdownMenuButton2">
+                                    <li class="soft-item">
+                                        <a class="soft-link" href="#">
+                                            <svg class="soft-link__icon">
+                                                <use xlink:href="/img/sprite.svg#support-icon"></use>
+                                            </svg>
+                                            <p class="soft-link__text">Support</p>
+                                        </a>
+                                    </li>
+                                    <li class="soft-item">
+                                        <a class="soft-link" href="#">
+                                            <svg class="soft-link__icon">
+                                                <use xlink:href="/img/sprite.svg#trainings-icon"></use>
+                                            </svg>
+                                            <p class="soft-link__text">Trainings</p>
+                                        </a>
+                                    </li>
+                                    <li class="soft-item">
+                                        <a class="soft-link" href="#">
+                                            <svg class="soft-link__icon">
+                                                <use xlink:href="/img/sprite.svg#professional-icon"></use>
+                                            </svg>
+                                            <p class="soft-link__text">Professional service</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="dropdown nav-item">
+                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+                                    IoT решения
+                                </button>
+                                <ul class="dropdown-menu services-menu" aria-labelledby="dropdownMenuButton3">
+                                    <li class="soft-item">
+                                        <a class="soft-link" href="#">
+                                            <svg class="soft-link__icon soft-link__icon--stroke">
+                                                <use xlink:href="/img/sprite.svg#Agro-icon"></use>
+                                            </svg>
+                                            <p class="soft-link__text">Agro</p>
+                                        </a>
+                                    </li>
+                                    <li class="soft-item">
+                                        <a class="soft-link" href="#">
+                                            <svg class="soft-link__icon soft-link__icon--stroke">
+                                                <use xlink:href="/img/sprite.svg#Health-icon"></use>
+                                            </svg>
+                                            <p class="soft-link__text">Health</p>
+                                        </a>
+                                    </li>
+                                    <li class="soft-item">
+                                        <a class="soft-link" href="#">
+                                            <svg class="soft-link__icon soft-link__icon--stroke">
+                                                <use xlink:href="/img/sprite.svg#School-icon"></use>
+                                            </svg>
+                                            <p class="soft-link__text">School</p>
+                                        </a>
+                                    </li>
+                                    <li class="soft-item">
+                                        <a class="soft-link" href="#">
+                                            <svg class="soft-link__icon soft-link__icon--stroke">
+                                                <use xlink:href="/img/sprite.svg#Monitoring-icon"></use>
+                                            </svg>
+                                            <p class="soft-link__text">Monitoring</p>
+                                        </a>
+                                    </li>
+                                    <li class="soft-item">
+                                        <a class="soft-link" href="#">
+                                            <svg class="soft-link__icon soft-link__icon--stroke">
+                                                <use xlink:href="/img/sprite.svg#Retail-icon"></use>
+                                            </svg>
+                                            <p class="soft-link__text">Retail</p>
+                                        </a>
+                                    </li>
+                                    <li class="soft-item">
+                                        <a class="soft-link" href="#">
+                                            <svg class="soft-link__icon soft-link__icon--stroke">
+                                                <use xlink:href="/img/sprite.svg#Mining-icon"></use>
+                                            </svg>
+                                            <p class="soft-link__text">Mining</p>
+                                        </a>
+                                    </li>
+                                    <li class="soft-item">
+                                        <a class="soft-link" href="#">
+                                            <svg class="soft-link__icon soft-link__icon--stroke">
+                                                <use xlink:href="/img/sprite.svg#Office-icon"></use>
+                                            </svg>
+                                            <p class="soft-link__text">Office</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="dropdown nav-item">
+                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton4" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Материалы о нас
+                                </button>
+                                <ul class="dropdown-menu services-menu" aria-labelledby="dropdownMenuButton4">
+                                    <li class="soft-item">
+                                        <a class="soft-link" href="#">
+                                            <svg class="soft-link__icon">
+                                                <use xlink:href="/img/sprite.svg#about-company-icon"></use>
+                                            </svg>
+                                            <p class="soft-link__text">Наша компания</p>
+                                        </a>
+                                    </li>
+                                    <li class="soft-item">
+                                        <a class="soft-link" href="#">
+                                            <svg class="soft-link__icon">
+                                                <use xlink:href="/img/sprite.svg#contacts-icon"></use>
+                                            </svg>
+                                            <p class="soft-link__text">Контакты</p>
+                                        </a>
+                                    </li>
+                                    <li class="soft-item">
+                                        <a class="soft-link" href="#">
+                                            <svg class="soft-link__icon">
+                                                <use xlink:href="/img/sprite.svg#vacancies-icon"></use>
+                                            </svg>
+                                            <p class="soft-link__text">Вакансии</p>
+                                        </a>
+                                    </li>
+                                    <li class="soft-item">
+                                        <a class="soft-link" href="#">
+                                            <svg class="soft-link__icon">
+                                                <use xlink:href="/img/sprite.svg#blog-icon"></use>
+                                            </svg>
+                                            <p class="soft-link__text">Блог</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="dropdown nav-item">
+                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton5" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Наши клиенты
+                                </button>
+                                <ul class="dropdown-menu services-menu" aria-labelledby="dropdownMenuButton5">
+                                    <li class="soft-item">
+                                        <a class="soft-link" href="#">
+                                            <svg class="soft-link__icon">
+                                                <use xlink:href="/img/sprite.svg#reviews-icon"></use>
+                                            </svg>
+                                            <p class="soft-link__text">Отзывы</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <!--mobile-menu-->
+                        <div class="mobile-wrapper d-flex d-lg-none">
+                            <button class="mobile-button">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                            <div class="mobile-wrap">
+                                <div class="d-flex justify-content-between align-items-center mb-4">
+                                    <a href="/" class="header-logo">
+                                        <img src="/img/icons/logo-img.png" alt="" class="header-logo__img">
+                                    </a>
+                                    <button class="cancel-btn">
+                                        <svg class="cancel-btn__icon">
+                                            <use xlink:href="/img/sprite.svg#cancel-icon"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+
+                                <nav class="mobile-nav">
+                                    <div class="dropdown nav-item">
+                                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton6" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Продукты
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton6">
+                                            <div class="product-menu">
+                                                <ul class="soft-menu">
+                                                    <li class="soft-menu__title">Soft</li>
+                                                    <li class="soft-item">
+                                                        <a class="soft-link" href="#">
+                                                            <svg class="soft-link__icon">
+                                                                <use xlink:href="/img/sprite.svg#cloud-icon"></use>
+                                                            </svg>
+                                                            <p class="soft-link__text">Облачные решения</p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="soft-item">
+                                                        <a class="soft-link" href="#">
+                                                            <svg class="soft-link__icon">
+                                                                <use xlink:href="/img/sprite.svg#monitoring-icon"></use>
+                                                            </svg>
+                                                            <p class="soft-link__text">Локальный мониторинг</p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="soft-item">
+                                                        <a class="soft-link" href="#">
+                                                            <svg class="soft-link__icon">
+                                                                <use xlink:href="/img/sprite.svg#proxi-icon"></use>
+                                                            </svg>
+                                                            <p class="soft-link__text">Прокси-клиенты</p>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <ul class="hardware-menu">
+                                                    <li class="hardware-menu__title">Hardware</li>
+                                                    <li class="hardware-item">
+                                                        <a class="hardware-link" href="#">
+                                                            <svg class="hardware-link__icon">
+                                                                <use xlink:href="/img/sprite.svg#sensors-icon"></use>
+                                                            </svg>
+                                                            <p class="hardware-link__text">Датчики</p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="hardware-item">
+                                                        <a class="hardware-link" href="#">
+                                                            <svg class="hardware-link__icon">
+                                                                <use xlink:href="/img/sprite.svg#ports-icon"></use>
+                                                            </svg>
+                                                            <p class="hardware-link__text">Шлюзы</p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="hardware-item">
+                                                        <a class="hardware-link" href="#">
+                                                            <svg class="hardware-link__icon">
+                                                                <use xlink:href="/img/sprite.svg#servers-icon"></use>
+                                                            </svg>
+                                                            <p class="hardware-link__text">Серверы</p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="hardware-item">
+                                                        <a class="hardware-link" href="#">
+                                                            <svg class="hardware-link__icon">
+                                                                <use xlink:href="/img/sprite.svg#controllers-icon"></use>
+                                                            </svg>
+                                                            <p class="hardware-link__text">Контроллеры</p>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <hr class="product-hr">
+                                            <ul class="additional-menu">
+                                                <li class="additional-item">
+                                                    <a class="additional-link" href="#">
+                                                        <svg class="additional-link__icon">
+                                                            <use xlink:href="/img/sprite.svg#customs-icon"></use>
+                                                        </svg>
+                                                        <p class="additional-link__text">Кастомные решения</p>
+                                                    </a>
+                                                </li>
+                                                <li class="additional-item">
+                                                    <a class="additional-link" href="#">
+                                                        <svg class="additional-link__icon">
+                                                            <use xlink:href="/img/sprite.svg#tariffs-icon"></use>
+                                                        </svg>
+                                                        <p class="additional-link__text">Тарифы</p>
+                                                    </a>
+                                                </li>
+                                                <li class="additional-item">
+                                                    <a class="additional-link" href="#">
+                                                        <svg class="additional-link__icon">
+                                                            <use xlink:href="/img/sprite.svg#demo-icon"></use>
+                                                        </svg>
+                                                        <p class="additional-link__text">Смотреть демо</p>
+                                                    </a>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                    <div class="dropdown nav-item">
+                                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton7" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Сервисы
+                                        </button>
+                                        <ul class="dropdown-menu services-menu" aria-labelledby="dropdownMenuButton7">
+                                            <li class="soft-item">
+                                                <a class="soft-link" href="#">
+                                                    <svg class="soft-link__icon">
+                                                        <use xlink:href="/img/sprite.svg#support-icon"></use>
+                                                    </svg>
+                                                    <p class="soft-link__text">Support</p>
+                                                </a>
+                                            </li>
+                                            <li class="soft-item">
+                                                <a class="soft-link" href="#">
+                                                    <svg class="soft-link__icon">
+                                                        <use xlink:href="/img/sprite.svg#trainings-icon"></use>
+                                                    </svg>
+                                                    <p class="soft-link__text">Trainings</p>
+                                                </a>
+                                            </li>
+                                            <li class="soft-item">
+                                                <a class="soft-link" href="#">
+                                                    <svg class="soft-link__icon">
+                                                        <use xlink:href="/img/sprite.svg#professional-icon"></use>
+                                                    </svg>
+                                                    <p class="soft-link__text">Professional service</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown nav-item">
+                                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton8" data-bs-toggle="dropdown" aria-expanded="false">
+                                            IoT решения
+                                        </button>
+                                        <ul class="dropdown-menu services-menu" aria-labelledby="dropdownMenuButton8">
+                                            <li class="soft-item">
+                                                <a class="soft-link" href="#">
+                                                    <svg class="soft-link__icon soft-link__icon--stroke">
+                                                        <use xlink:href="/img/sprite.svg#Agro-icon"></use>
+                                                    </svg>
+                                                    <p class="soft-link__text">Agro</p>
+                                                </a>
+                                            </li>
+                                            <li class="soft-item">
+                                                <a class="soft-link" href="#">
+                                                    <svg class="soft-link__icon soft-link__icon--stroke">
+                                                        <use xlink:href="/img/sprite.svg#Health-icon"></use>
+                                                    </svg>
+                                                    <p class="soft-link__text">Health</p>
+                                                </a>
+                                            </li>
+                                            <li class="soft-item">
+                                                <a class="soft-link" href="#">
+                                                    <svg class="soft-link__icon soft-link__icon--stroke">
+                                                        <use xlink:href="/img/sprite.svg#School-icon"></use>
+                                                    </svg>
+                                                    <p class="soft-link__text">School</p>
+                                                </a>
+                                            </li>
+                                            <li class="soft-item">
+                                                <a class="soft-link" href="#">
+                                                    <svg class="soft-link__icon soft-link__icon--stroke">
+                                                        <use xlink:href="/img/sprite.svg#Monitoring-icon"></use>
+                                                    </svg>
+                                                    <p class="soft-link__text">Monitoring</p>
+                                                </a>
+                                            </li>
+                                            <li class="soft-item">
+                                                <a class="soft-link" href="#">
+                                                    <svg class="soft-link__icon soft-link__icon--stroke">
+                                                        <use xlink:href="/img/sprite.svg#Retail-icon"></use>
+                                                    </svg>
+                                                    <p class="soft-link__text">Retail</p>
+                                                </a>
+                                            </li>
+                                            <li class="soft-item">
+                                                <a class="soft-link" href="#">
+                                                    <svg class="soft-link__icon soft-link__icon--stroke">
+                                                        <use xlink:href="/img/sprite.svg#Mining-icon"></use>
+                                                    </svg>
+                                                    <p class="soft-link__text">Mining</p>
+                                                </a>
+                                            </li>
+                                            <li class="soft-item">
+                                                <a class="soft-link" href="#">
+                                                    <svg class="soft-link__icon soft-link__icon--stroke">
+                                                        <use xlink:href="/img/sprite.svg#Office-icon"></use>
+                                                    </svg>
+                                                    <p class="soft-link__text">Office</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown nav-item">
+                                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton9" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Материалы о нас
+                                        </button>
+                                        <ul class="dropdown-menu services-menu" aria-labelledby="dropdownMenuButton9">
+                                            <li class="soft-item">
+                                                <a class="soft-link" href="#">
+                                                    <svg class="soft-link__icon">
+                                                        <use xlink:href="/img/sprite.svg#about-company-icon"></use>
+                                                    </svg>
+                                                    <p class="soft-link__text">Наша компания</p>
+                                                </a>
+                                            </li>
+                                            <li class="soft-item">
+                                                <a class="soft-link" href="#">
+                                                    <svg class="soft-link__icon">
+                                                        <use xlink:href="/img/sprite.svg#contacts-icon"></use>
+                                                    </svg>
+                                                    <p class="soft-link__text">Контакты</p>
+                                                </a>
+                                            </li>
+                                            <li class="soft-item">
+                                                <a class="soft-link" href="#">
+                                                    <svg class="soft-link__icon">
+                                                        <use xlink:href="/img/sprite.svg#vacancies-icon"></use>
+                                                    </svg>
+                                                    <p class="soft-link__text">Вакансии</p>
+                                                </a>
+                                            </li>
+                                            <li class="soft-item">
+                                                <a class="soft-link" href="#">
+                                                    <svg class="soft-link__icon">
+                                                        <use xlink:href="/img/sprite.svg#blog-icon"></use>
+                                                    </svg>
+                                                    <p class="soft-link__text">Блог</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown nav-item">
+                                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton10" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Наши клиенты
+                                        </button>
+                                        <ul class="dropdown-menu services-menu" aria-labelledby="dropdownMenuButton10">
+                                            <li class="soft-item">
+                                                <a class="soft-link" href="#">
+                                                    <svg class="soft-link__icon">
+                                                        <use xlink:href="/img/sprite.svg#reviews-icon"></use>
+                                                    </svg>
+                                                    <p class="soft-link__text">Отзывы</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--main-->
+<main class="main">
+    <!--products-bg-->
+    <div class="product-bg product-bg--company">
+        <div class="product-wrapper">
+            <h1 class="product-wrapper__title">Наша компания</h1>
+            <p class="product-wrapper__text product-wrapper__text--3">Платформа IoT решений Сubа IoT Platform позволяет
+                создавать решения для мониторинга инфраструктуры и анализа эффективности вашего бизнеса. Экосистема Сubа
+                IoT Platform предоставляет возможность быстро развернуть и гибко модернизировать сервисы на вашем
+                предприятии благодаря применению оборудования собственного производства.</p>
+        </div>
+    </div>
+    <!--company-grid-->
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="company-grid">
+                    <div class="company-item">
+                        <p class="company-item__text">Продвинутая система визуализации обеспечивает доступ к данным в
+                            режиме реального времени, гарантируя своевременное реагирование на критически важные
+                            события.</p>
+                        <p class="company-item__text">
+                            Экосистема Сuba включает в себя семь отраслевых решений. За каждый сервисом стоит команда
+                            инженеров, программистов, data science специалистов — международных экспертов цифровизации.
+                        </p>
+                    </div>
+                    <div class="company-item">
+                        <p class="company-item__text">Решения Сubа и продукты партнёров, созданные на основе платформы
+                            уже работают на промышленных предприятиях в Казахстане.
+                        </p>
+                        <p class="company-item__text">
+                            Наша компания активно сотрудничает с системными интеграторами, IT-компаниями, поставщиками
+                            инфраструктуры и центрами экспертизы в рамках интеграции концепции «Индустрия 4.0».
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--company-mission-->
+    <div class="mission-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="mission-block">
+                        <img src="/img/icons/company-img.png" alt="" class="mission-block__img">
+                        <h3 class="mission-block__title">Наша миссия</h3>
+                        <p class="mission-block__text">Предоставление единой платформы
+                            мониторинга производства в целях
+                            повышения эффективности бизнеса,
+                            снижения затрат и издержек на IT, а
+                            также формирование стратегии
+                            бизнеса на основе данных</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--company-values-->
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="values-wrapper">
+                    <h3 class="values-wrapper__title">Наши ценности</h3>
+                    <div class="values-grid">
+                        <div class="values-box">
+                            <div class="values-item">
+                                <svg class="values-item__icon">
+                                    <use xlink:href="/img/sprite.svg#company-icon-1"></use>
+                                </svg>
+                                <p class="values-item__text">Нацеленность на итоговый результат</p>
+                            </div>
+                            <div class="values-item">
+                                <svg class="values-item__icon">
+                                    <use xlink:href="/img/sprite.svg#company-icon-2"></use>
+                                </svg>
+                                <p class="values-item__text">Стремление к развитию и созданию нового</p>
+                            </div>
+                        </div>
+                        <div class="values-box">
+                            <div class="values-item">
+                                <svg class="values-item__icon">
+                                    <use xlink:href="/img/sprite.svg#company-icon-3"></use>
+                                </svg>
+                                <p class="values-item__text">Комплексный подход к решению задач</p>
+                            </div>
+                            <div class="values-item">
+                                <svg class="values-item__icon">
+                                    <use xlink:href="/img/sprite.svg#company-icon-4"></use>
+                                </svg>
+                                <p class="values-item__text">Профессионализм и ответственность</p>
+                            </div>
+                        </div>
+                        <div class="values-box">
+                            <div class="values-item">
+                                <svg class="values-item__icon">
+                                    <use xlink:href="/img/sprite.svg#company-icon-5"></use>
+                                </svg>
+                                <p class="values-item__text">Доступность и открытость</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--company-numbers-->
+    <div class="numbers-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="numbers-wrapper">
+                        <h3 class="numbers-wrapper__title">Мы в цифрах</h3>
+                        <div class="numbers-grid">
+                            <div class="number-item">
+                                <p class="number-item__title">
+                                    >300%
+                                </p>
+                                <p class="number-item__text">
+                                    экономия на
+                                    интеграции систем,
+                                    цена оборудования Cuba
+                                    до 10 раз ниже
+                                </p>
+                            </div>
+                            <div class="number-item">
+                                <p class="number-item__title">
+                                    1-5%
+                                </p>
+                                <p class="number-item__text">
+                                    снижение брака на
+                                    производстве
+                                </p>
+                            </div>
+                            <div class="number-item">
+                                <p class="number-item__title">
+                                    75%
+                                </p>
+                                <p class="number-item__text">
+                                    случаев причин аварий в дата-центрах — человеческий
+                                    фактор.
+                                    Мы обеспечиваем бесперебойную
+                                    эксплуатацию
+                                </p>
+                            </div>
+                            <div class="number-item">
+                                <p class="number-item__title">
+                                    7
+                                </p>
+                                <p class="number-item__text">
+                                    различных решений в
+                                    экосистеме Cuba
+                                    IoT Platform
+                                </p>
+                            </div>
+                        </div>
+                        <div class="numbers-grid">
+                            <div class="number-item">
+                                <p class="number-item__title">
+                                    2
+                                </p>
+                                <p class="number-item__text">
+                                    секунды — время реагирования
+                                    системы на
+                                    возникновение
+                                    аварийной ситуации
+                                </p>
+                            </div>
+                            <div class="number-item">
+                                <p class="number-item__title">
+                                    100 000
+                                </p>
+                                <p class="number-item__text">
+                                    устройств на сервер
+                                </p>
+                            </div>
+                            <div class="number-item">
+                                <p class="number-item__title">
+                                    15 000 000
+                                </p>
+                                <p class="number-item__text">
+                                    измерений в сутки
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<!--footer-->
+<footer class="footer">
+    <!--mailing-list-->
+    <div class="footer-mailing-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-mailing">
+                        <a href="/">
+                            <img src="/img/icons/logo-img.png" alt="" class="footer-mailing__img">
+                        </a>
+                        <a href="#" class="button-yellow">Подписаться на рассылку</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--main-footer-->
+    <div class="footer-wrapper-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-wrapper">
+                        <div class="footer-nav">
+                            <a href="tel:+7 705 171 97 16" class="footer-nav__link">+7 705 171 97 16</a>
+                            <a href="mailto:sales@tocloud.kz" class="footer-nav__link">sales@tocloud.kz</a>
+                            <a href="#" class="footer-nav__link">смотреть демо</a>
+                            <a href="#" class="footer-nav__link">тарифы</a>
+
+                        </div>
+                        <div class="footer-nav">
+                            <a href="#" class="footer-nav__link footer-nav__link--border">LinkedIn</a>
+                            <a href="#" class="footer-nav__link footer-nav__link--border">Telegram</a>
+                            <a href="#" class="footer-nav__link footer-nav__link--border">YouTube</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="/js/index.js"></script>
+<script src="/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
