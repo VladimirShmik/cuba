@@ -80,7 +80,7 @@
   flex-direction: column;
   margin: 90px 0 70px;
   @media (min-width: 320px) and (max-width: 1023px) {
-    margin: 40px 0 30px;
+    margin: 40px 20px 30px;
 
   }
 
@@ -201,8 +201,14 @@
 .list-bg {
   background-color: #2751C3;
   padding: 50px 45px;
+  @media (min-width: 320px) and (max-width: 1023px) {
+    padding: 40px 25px 0px;
+  }
   &--2{
     padding: 90px 45px 0px;
+    @media (min-width: 320px) and (max-width: 1023px) {
+      padding: 40px 25px 0px;
+    }
   }
 
 }
@@ -225,8 +231,12 @@
   position: relative;
   padding: 0 30px;
   width: 100%;
+  overflow: hidden;
   &--2{
     max-width: 630px;
+    @media (min-width: 320px) and (max-width: 1023px) {
+      margin-bottom: 30px;
+    }
   }
   &__title{
     margin-top: 60px;
@@ -261,6 +271,10 @@
     bottom: 10px;
     @media (min-width: 320px) and (max-width: 1023px) {
       width: 20%;
+    }
+    &--2{
+      right: -85px;
+      bottom: 0px;
     }
   }
 }

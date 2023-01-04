@@ -1,0 +1,1431 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cuba</title>
+    <link rel="stylesheet" href="/scss/bootstrap.min.css">
+    <link rel="stylesheet" href="/scss/main.css">
+</head>
+<body>
+<!--header-->
+<header class="header">
+    <div class="header-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="header-menu">
+                        <a href="/" class="header-logo">
+                            <img src="/img/icons/logo-img.png" alt="" class="header-logo__img">
+                        </a>
+                        <nav class="header-nav d-none d-lg-flex">
+                            <div class="dropdown nav-item">
+                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                    Продукты
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <div class="product-menu">
+                                        <ul class="soft-menu">
+                                            <li class="soft-menu__title">Soft</li>
+                                            <li class="soft-item">
+                                                <a class="soft-link" href="#">
+                                                    <svg class="soft-link__icon">
+                                                        <use xlink:href="/img/sprite.svg#cloud-icon"></use>
+                                                    </svg>
+                                                    <p class="soft-link__text">Облачные решения</p>
+                                                </a>
+                                            </li>
+                                            <li class="soft-item">
+                                                <a class="soft-link" href="#">
+                                                    <svg class="soft-link__icon">
+                                                        <use xlink:href="/img/sprite.svg#monitoring-icon"></use>
+                                                    </svg>
+                                                    <p class="soft-link__text">Локальный мониторинг</p>
+                                                </a>
+                                            </li>
+                                            <li class="soft-item">
+                                                <a class="soft-link" href="#">
+                                                    <svg class="soft-link__icon">
+                                                        <use xlink:href="/img/sprite.svg#proxi-icon"></use>
+                                                    </svg>
+                                                    <p class="soft-link__text">Прокси-клиенты</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="hardware-menu">
+                                            <li class="hardware-menu__title">Hardware</li>
+                                            <li class="hardware-item">
+                                                <a class="hardware-link" href="#">
+                                                    <svg class="hardware-link__icon">
+                                                        <use xlink:href="/img/sprite.svg#sensors-icon"></use>
+                                                    </svg>
+                                                    <p class="hardware-link__text">Датчики</p>
+                                                </a>
+                                            </li>
+                                            <li class="hardware-item">
+                                                <a class="hardware-link" href="#">
+                                                    <svg class="hardware-link__icon">
+                                                        <use xlink:href="/img/sprite.svg#ports-icon"></use>
+                                                    </svg>
+                                                    <p class="hardware-link__text">Шлюзы</p>
+                                                </a>
+                                            </li>
+                                            <li class="hardware-item">
+                                                <a class="hardware-link" href="#">
+                                                    <svg class="hardware-link__icon">
+                                                        <use xlink:href="/img/sprite.svg#servers-icon"></use>
+                                                    </svg>
+                                                    <p class="hardware-link__text">Серверы</p>
+                                                </a>
+                                            </li>
+                                            <li class="hardware-item">
+                                                <a class="hardware-link" href="#">
+                                                    <svg class="hardware-link__icon">
+                                                        <use xlink:href="/img/sprite.svg#controllers-icon"></use>
+                                                    </svg>
+                                                    <p class="hardware-link__text">Контроллеры</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <hr class="product-hr">
+                                    <ul class="additional-menu">
+                                        <li class="additional-item">
+                                            <a class="additional-link" href="#">
+                                                <svg class="additional-link__icon">
+                                                    <use xlink:href="/img/sprite.svg#customs-icon"></use>
+                                                </svg>
+                                                <p class="additional-link__text">Кастомные решения</p>
+                                            </a>
+                                        </li>
+                                        <li class="additional-item">
+                                            <a class="additional-link" href="#">
+                                                <svg class="additional-link__icon">
+                                                    <use xlink:href="/img/sprite.svg#tariffs-icon"></use>
+                                                </svg>
+                                                <p class="additional-link__text">Тарифы</p>
+                                            </a>
+                                        </li>
+                                        <li class="additional-item">
+                                            <a class="additional-link" href="#">
+                                                <svg class="additional-link__icon">
+                                                    <use xlink:href="/img/sprite.svg#demo-icon"></use>
+                                                </svg>
+                                                <p class="additional-link__text">Смотреть демо</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                            <div class="dropdown nav-item">
+                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton2"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                    Сервисы
+                                </button>
+                                <ul class="dropdown-menu services-menu" aria-labelledby="dropdownMenuButton2">
+                                    <li class="soft-item">
+                                        <a class="soft-link" href="#">
+                                            <svg class="soft-link__icon">
+                                                <use xlink:href="/img/sprite.svg#support-icon"></use>
+                                            </svg>
+                                            <p class="soft-link__text">Support</p>
+                                        </a>
+                                    </li>
+                                    <li class="soft-item">
+                                        <a class="soft-link" href="#">
+                                            <svg class="soft-link__icon">
+                                                <use xlink:href="/img/sprite.svg#trainings-icon"></use>
+                                            </svg>
+                                            <p class="soft-link__text">Trainings</p>
+                                        </a>
+                                    </li>
+                                    <li class="soft-item">
+                                        <a class="soft-link" href="#">
+                                            <svg class="soft-link__icon">
+                                                <use xlink:href="/img/sprite.svg#professional-icon"></use>
+                                            </svg>
+                                            <p class="soft-link__text">Professional service</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="dropdown nav-item">
+                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton3"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                    IoT решения
+                                </button>
+                                <ul class="dropdown-menu services-menu" aria-labelledby="dropdownMenuButton3">
+                                    <li class="soft-item">
+                                        <a class="soft-link" href="#">
+                                            <svg class="soft-link__icon soft-link__icon--stroke">
+                                                <use xlink:href="/img/sprite.svg#Agro-icon"></use>
+                                            </svg>
+                                            <p class="soft-link__text">Agro</p>
+                                        </a>
+                                    </li>
+                                    <li class="soft-item">
+                                        <a class="soft-link" href="#">
+                                            <svg class="soft-link__icon soft-link__icon--stroke">
+                                                <use xlink:href="/img/sprite.svg#Health-icon"></use>
+                                            </svg>
+                                            <p class="soft-link__text">Health</p>
+                                        </a>
+                                    </li>
+                                    <li class="soft-item">
+                                        <a class="soft-link" href="#">
+                                            <svg class="soft-link__icon soft-link__icon--stroke">
+                                                <use xlink:href="/img/sprite.svg#School-icon"></use>
+                                            </svg>
+                                            <p class="soft-link__text">School</p>
+                                        </a>
+                                    </li>
+                                    <li class="soft-item">
+                                        <a class="soft-link" href="#">
+                                            <svg class="soft-link__icon soft-link__icon--stroke">
+                                                <use xlink:href="/img/sprite.svg#Monitoring-icon"></use>
+                                            </svg>
+                                            <p class="soft-link__text">Monitoring</p>
+                                        </a>
+                                    </li>
+                                    <li class="soft-item">
+                                        <a class="soft-link" href="#">
+                                            <svg class="soft-link__icon soft-link__icon--stroke">
+                                                <use xlink:href="/img/sprite.svg#Retail-icon"></use>
+                                            </svg>
+                                            <p class="soft-link__text">Retail</p>
+                                        </a>
+                                    </li>
+                                    <li class="soft-item">
+                                        <a class="soft-link" href="#">
+                                            <svg class="soft-link__icon soft-link__icon--stroke">
+                                                <use xlink:href="/img/sprite.svg#Mining-icon"></use>
+                                            </svg>
+                                            <p class="soft-link__text">Mining</p>
+                                        </a>
+                                    </li>
+                                    <li class="soft-item">
+                                        <a class="soft-link" href="#">
+                                            <svg class="soft-link__icon soft-link__icon--stroke">
+                                                <use xlink:href="/img/sprite.svg#Office-icon"></use>
+                                            </svg>
+                                            <p class="soft-link__text">Office</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="dropdown nav-item">
+                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton4"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                    Материалы о нас
+                                </button>
+                                <ul class="dropdown-menu services-menu" aria-labelledby="dropdownMenuButton4">
+                                    <li class="soft-item">
+                                        <a class="soft-link" href="#">
+                                            <svg class="soft-link__icon">
+                                                <use xlink:href="/img/sprite.svg#about-company-icon"></use>
+                                            </svg>
+                                            <p class="soft-link__text">Наша компания</p>
+                                        </a>
+                                    </li>
+                                    <li class="soft-item">
+                                        <a class="soft-link" href="#">
+                                            <svg class="soft-link__icon">
+                                                <use xlink:href="/img/sprite.svg#contacts-icon"></use>
+                                            </svg>
+                                            <p class="soft-link__text">Контакты</p>
+                                        </a>
+                                    </li>
+                                    <li class="soft-item">
+                                        <a class="soft-link" href="#">
+                                            <svg class="soft-link__icon">
+                                                <use xlink:href="/img/sprite.svg#vacancies-icon"></use>
+                                            </svg>
+                                            <p class="soft-link__text">Вакансии</p>
+                                        </a>
+                                    </li>
+                                    <li class="soft-item">
+                                        <a class="soft-link" href="#">
+                                            <svg class="soft-link__icon">
+                                                <use xlink:href="/img/sprite.svg#blog-icon"></use>
+                                            </svg>
+                                            <p class="soft-link__text">Блог</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="dropdown nav-item">
+                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton5"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                    Наши клиенты
+                                </button>
+                                <ul class="dropdown-menu services-menu" aria-labelledby="dropdownMenuButton5">
+                                    <li class="soft-item">
+                                        <a class="soft-link" href="#">
+                                            <svg class="soft-link__icon">
+                                                <use xlink:href="/img/sprite.svg#reviews-icon"></use>
+                                            </svg>
+                                            <p class="soft-link__text">Отзывы</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <!--mobile-menu-->
+                        <div class="mobile-wrapper d-flex d-lg-none">
+                            <button class="mobile-button">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                            <div class="mobile-wrap">
+                                <div class="d-flex justify-content-between align-items-center mb-4">
+                                    <a href="/" class="header-logo">
+                                        <img src="/img/icons/logo-img.png" alt="" class="header-logo__img">
+                                    </a>
+                                    <button class="cancel-btn">
+                                        <svg class="cancel-btn__icon">
+                                            <use xlink:href="/img/sprite.svg#cancel-icon"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+
+                                <nav class="mobile-nav">
+                                    <div class="dropdown nav-item">
+                                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton6"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                            Продукты
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton6">
+                                            <div class="product-menu">
+                                                <ul class="soft-menu">
+                                                    <li class="soft-menu__title">Soft</li>
+                                                    <li class="soft-item">
+                                                        <a class="soft-link" href="#">
+                                                            <svg class="soft-link__icon">
+                                                                <use xlink:href="/img/sprite.svg#cloud-icon"></use>
+                                                            </svg>
+                                                            <p class="soft-link__text">Облачные решения</p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="soft-item">
+                                                        <a class="soft-link" href="#">
+                                                            <svg class="soft-link__icon">
+                                                                <use xlink:href="/img/sprite.svg#monitoring-icon"></use>
+                                                            </svg>
+                                                            <p class="soft-link__text">Локальный мониторинг</p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="soft-item">
+                                                        <a class="soft-link" href="#">
+                                                            <svg class="soft-link__icon">
+                                                                <use xlink:href="/img/sprite.svg#proxi-icon"></use>
+                                                            </svg>
+                                                            <p class="soft-link__text">Прокси-клиенты</p>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <ul class="hardware-menu">
+                                                    <li class="hardware-menu__title">Hardware</li>
+                                                    <li class="hardware-item">
+                                                        <a class="hardware-link" href="#">
+                                                            <svg class="hardware-link__icon">
+                                                                <use xlink:href="/img/sprite.svg#sensors-icon"></use>
+                                                            </svg>
+                                                            <p class="hardware-link__text">Датчики</p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="hardware-item">
+                                                        <a class="hardware-link" href="#">
+                                                            <svg class="hardware-link__icon">
+                                                                <use xlink:href="/img/sprite.svg#ports-icon"></use>
+                                                            </svg>
+                                                            <p class="hardware-link__text">Шлюзы</p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="hardware-item">
+                                                        <a class="hardware-link" href="#">
+                                                            <svg class="hardware-link__icon">
+                                                                <use xlink:href="/img/sprite.svg#servers-icon"></use>
+                                                            </svg>
+                                                            <p class="hardware-link__text">Серверы</p>
+                                                        </a>
+                                                    </li>
+                                                    <li class="hardware-item">
+                                                        <a class="hardware-link" href="#">
+                                                            <svg class="hardware-link__icon">
+                                                                <use xlink:href="/img/sprite.svg#controllers-icon"></use>
+                                                            </svg>
+                                                            <p class="hardware-link__text">Контроллеры</p>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <hr class="product-hr">
+                                            <ul class="additional-menu">
+                                                <li class="additional-item">
+                                                    <a class="additional-link" href="#">
+                                                        <svg class="additional-link__icon">
+                                                            <use xlink:href="/img/sprite.svg#customs-icon"></use>
+                                                        </svg>
+                                                        <p class="additional-link__text">Кастомные решения</p>
+                                                    </a>
+                                                </li>
+                                                <li class="additional-item">
+                                                    <a class="additional-link" href="#">
+                                                        <svg class="additional-link__icon">
+                                                            <use xlink:href="/img/sprite.svg#tariffs-icon"></use>
+                                                        </svg>
+                                                        <p class="additional-link__text">Тарифы</p>
+                                                    </a>
+                                                </li>
+                                                <li class="additional-item">
+                                                    <a class="additional-link" href="#">
+                                                        <svg class="additional-link__icon">
+                                                            <use xlink:href="/img/sprite.svg#demo-icon"></use>
+                                                        </svg>
+                                                        <p class="additional-link__text">Смотреть демо</p>
+                                                    </a>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                    <div class="dropdown nav-item">
+                                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton7"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                            Сервисы
+                                        </button>
+                                        <ul class="dropdown-menu services-menu" aria-labelledby="dropdownMenuButton7">
+                                            <li class="soft-item">
+                                                <a class="soft-link" href="#">
+                                                    <svg class="soft-link__icon">
+                                                        <use xlink:href="/img/sprite.svg#support-icon"></use>
+                                                    </svg>
+                                                    <p class="soft-link__text">Support</p>
+                                                </a>
+                                            </li>
+                                            <li class="soft-item">
+                                                <a class="soft-link" href="#">
+                                                    <svg class="soft-link__icon">
+                                                        <use xlink:href="/img/sprite.svg#trainings-icon"></use>
+                                                    </svg>
+                                                    <p class="soft-link__text">Trainings</p>
+                                                </a>
+                                            </li>
+                                            <li class="soft-item">
+                                                <a class="soft-link" href="#">
+                                                    <svg class="soft-link__icon">
+                                                        <use xlink:href="/img/sprite.svg#professional-icon"></use>
+                                                    </svg>
+                                                    <p class="soft-link__text">Professional service</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown nav-item">
+                                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton8"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                            IoT решения
+                                        </button>
+                                        <ul class="dropdown-menu services-menu" aria-labelledby="dropdownMenuButton8">
+                                            <li class="soft-item">
+                                                <a class="soft-link" href="#">
+                                                    <svg class="soft-link__icon soft-link__icon--stroke">
+                                                        <use xlink:href="/img/sprite.svg#Agro-icon"></use>
+                                                    </svg>
+                                                    <p class="soft-link__text">Agro</p>
+                                                </a>
+                                            </li>
+                                            <li class="soft-item">
+                                                <a class="soft-link" href="#">
+                                                    <svg class="soft-link__icon soft-link__icon--stroke">
+                                                        <use xlink:href="/img/sprite.svg#Health-icon"></use>
+                                                    </svg>
+                                                    <p class="soft-link__text">Health</p>
+                                                </a>
+                                            </li>
+                                            <li class="soft-item">
+                                                <a class="soft-link" href="#">
+                                                    <svg class="soft-link__icon soft-link__icon--stroke">
+                                                        <use xlink:href="/img/sprite.svg#School-icon"></use>
+                                                    </svg>
+                                                    <p class="soft-link__text">School</p>
+                                                </a>
+                                            </li>
+                                            <li class="soft-item">
+                                                <a class="soft-link" href="#">
+                                                    <svg class="soft-link__icon soft-link__icon--stroke">
+                                                        <use xlink:href="/img/sprite.svg#Monitoring-icon"></use>
+                                                    </svg>
+                                                    <p class="soft-link__text">Monitoring</p>
+                                                </a>
+                                            </li>
+                                            <li class="soft-item">
+                                                <a class="soft-link" href="#">
+                                                    <svg class="soft-link__icon soft-link__icon--stroke">
+                                                        <use xlink:href="/img/sprite.svg#Retail-icon"></use>
+                                                    </svg>
+                                                    <p class="soft-link__text">Retail</p>
+                                                </a>
+                                            </li>
+                                            <li class="soft-item">
+                                                <a class="soft-link" href="#">
+                                                    <svg class="soft-link__icon soft-link__icon--stroke">
+                                                        <use xlink:href="/img/sprite.svg#Mining-icon"></use>
+                                                    </svg>
+                                                    <p class="soft-link__text">Mining</p>
+                                                </a>
+                                            </li>
+                                            <li class="soft-item">
+                                                <a class="soft-link" href="#">
+                                                    <svg class="soft-link__icon soft-link__icon--stroke">
+                                                        <use xlink:href="/img/sprite.svg#Office-icon"></use>
+                                                    </svg>
+                                                    <p class="soft-link__text">Office</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown nav-item">
+                                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton9"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                            Материалы о нас
+                                        </button>
+                                        <ul class="dropdown-menu services-menu" aria-labelledby="dropdownMenuButton9">
+                                            <li class="soft-item">
+                                                <a class="soft-link" href="#">
+                                                    <svg class="soft-link__icon">
+                                                        <use xlink:href="/img/sprite.svg#about-company-icon"></use>
+                                                    </svg>
+                                                    <p class="soft-link__text">Наша компания</p>
+                                                </a>
+                                            </li>
+                                            <li class="soft-item">
+                                                <a class="soft-link" href="#">
+                                                    <svg class="soft-link__icon">
+                                                        <use xlink:href="/img/sprite.svg#contacts-icon"></use>
+                                                    </svg>
+                                                    <p class="soft-link__text">Контакты</p>
+                                                </a>
+                                            </li>
+                                            <li class="soft-item">
+                                                <a class="soft-link" href="#">
+                                                    <svg class="soft-link__icon">
+                                                        <use xlink:href="/img/sprite.svg#vacancies-icon"></use>
+                                                    </svg>
+                                                    <p class="soft-link__text">Вакансии</p>
+                                                </a>
+                                            </li>
+                                            <li class="soft-item">
+                                                <a class="soft-link" href="#">
+                                                    <svg class="soft-link__icon">
+                                                        <use xlink:href="/img/sprite.svg#blog-icon"></use>
+                                                    </svg>
+                                                    <p class="soft-link__text">Блог</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown nav-item">
+                                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton10"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                            Наши клиенты
+                                        </button>
+                                        <ul class="dropdown-menu services-menu" aria-labelledby="dropdownMenuButton10">
+                                            <li class="soft-item">
+                                                <a class="soft-link" href="#">
+                                                    <svg class="soft-link__icon">
+                                                        <use xlink:href="/img/sprite.svg#reviews-icon"></use>
+                                                    </svg>
+                                                    <p class="soft-link__text">Отзывы</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<main class="main">
+    <!--products-bg-->
+    <div class="product-bg product-bg--cloud">
+        <div class="product-wrapper">
+            <h1 class="product-wrapper__title product-wrapper__title--1 px-1">Облачные решения Cuba IoT Platform</h1>
+            <p class="product-wrapper__text product-wrapper__text--3">Управляемая, масштабируемая и отказоустойчивая инфрастуктура мониторинга</p>
+        </div>
+    </div>
+    <!--products-items-->
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+              <div class="product-grid">
+                <div class="product-item product-item--grey">
+                  <h2 class="product-item__title">Расширенные возможности</h2>
+                  <p class="product-item__text">Платформа поддерживает все функции локального мониторинга</p>
+                  <svg class="product-item__img">
+                    <use xlink:href="/img/sprite.svg#product-icon-1"></use>
+                  </svg>
+                </div>
+                <div class="product-item product-item--blue">
+                  <h2 class="product-item__title">Снижение затрат</h2>
+                  <p class="product-item__text">Нет необходимости в приобретении собственного серверного оборудования</p>
+                  <svg class="product-item__img">
+                    <use xlink:href="/img/sprite.svg#product-icon-2"></use>
+                  </svg>
+                </div>
+                <div class="product-item product-item--blue">
+                  <h2 class="product-item__title">Масштабирование</h2>
+                  <p class="product-item__text">Сuba использует архитектуру микросервисов и развертывается в нескольких зонах доступности</p>
+                  <svg class="product-item__img">
+                    <use xlink:href="/img/sprite.svg#product-icon-3"></use>
+                  </svg>
+                </div>
+                <div class="product-item product-item--grey">
+                  <h2 class="product-item__title">Защита данных</h2>
+                  <p class="product-item__text">Платформа использует резервируемые инфраструктуры, процедуры резервного копирования, а также прокси клиент для исключения потери данных</p>
+                  <svg class="product-item__img">
+                    <use xlink:href="/img/sprite.svg#product-icon-4"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    <!--products-form-->
+    <div class="form-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <form action="" class="product-form">
+                        <h2 class="product-form__title">
+                            Отправить запрос
+                        </h2>
+                        <div class="form-block">
+                            <fieldset class="form-row">
+                                <input type="text" class="form-block__input" placeholder="Имя">
+                                <input type="text" class="form-block__input" placeholder="Фамилия">
+                            </fieldset>
+                            <fieldset class="form-row">
+                                <input type="text" class="form-block__input" placeholder="Должность">
+                                <input type="text" class="form-block__input" placeholder="Компания">
+                            </fieldset>
+                            <input type="text" class="form-block__input" placeholder="Отрасль">
+                            <input type="text" class="form-block__input" placeholder="Номер телефона">
+                            <input type="text" class="form-block__input" placeholder="Комментарий">
+                        </div>
+                        <button class="product-form__btn" type="submit">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--matrix-section-->
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="matrix-wrapper">
+                    <div class="matrix-heading">
+                        <h2 class="matrix-heading__title">
+                            Матрица сравнения характеристик
+                        </h2>
+                        <p class="matrix-heading__subtitle">Облачные решения</p>
+                        <p class="matrix-heading__subtitle">Локальное решение</p>
+                        <p class="matrix-heading__subtitle">Кастомное решение</p>
+                    </div>
+                    <div class="matrix-table">
+                        <div class="matrix-row">
+                            <p class="matrix-row__text">Сбор информации в базу данных</p>
+                            <span class="matrix-row__span matrix-row__span--plus">+</span>
+                            <span class="matrix-row__span matrix-row__span--plus">+</span>
+                            <span class="matrix-row__span matrix-row__span--plus">+</span>
+                        </div>
+                        <div class="matrix-row">
+                            <p class="matrix-row__text">Нет ограничений по продолжительности хранения данных</p>
+                            <span class="matrix-row__span matrix-row__span--minus">-</span>
+                            <span class="matrix-row__span matrix-row__span--plus">+</span>
+                            <span class="matrix-row__span matrix-row__span--plus">+</span>
+                        </div>
+                        <div class="matrix-row">
+                            <p class="matrix-row__text">Нет ограничений по объему получаемых данных от IoT устройств</p>
+                            <span class="matrix-row__span matrix-row__span--minus">-</span>
+                            <span class="matrix-row__span matrix-row__span--plus">+</span>
+                            <span class="matrix-row__span matrix-row__span--plus">+</span>
+                        </div>
+                        <div class="matrix-row">
+                            <p class="matrix-row__text">Ограничения на сценарии по обработке данных</p>
+                            <span class="matrix-row__span matrix-row__span--plus">+</span>
+                            <span class="matrix-row__span matrix-row__span--plus">+</span>
+                            <span class="matrix-row__span matrix-row__span--minus">-</span>
+                        </div>
+                        <div class="matrix-row">
+                            <p class="matrix-row__text">Доступ на управление ролями</p>
+                            <span class="matrix-row__span matrix-row__span--plus">+</span>
+                            <span class="matrix-row__span matrix-row__span--minus">-</span>
+                            <span class="matrix-row__span matrix-row__span--plus">+</span>
+                        </div>
+                        <div class="matrix-row">
+                            <p class="matrix-row__text">Доступ на управление группами</p>
+                            <span class="matrix-row__span matrix-row__span--plus">+</span>
+                            <span class="matrix-row__span matrix-row__span--minus">-</span>
+                            <span class="matrix-row__span matrix-row__span--plus">+</span>
+                        </div>
+                        <div class="matrix-row">
+                            <p class="matrix-row__text">Доступ на управление группами устройств</p>
+                            <span class="matrix-row__span matrix-row__span--plus">+</span>
+                            <span class="matrix-row__span matrix-row__span--minus">-</span>
+                            <span class="matrix-row__span matrix-row__span--plus">+</span>
+                        </div>
+                        <div class="matrix-row">
+                            <p class="matrix-row__text">Интеграции системы с существующими внутренними системами
+                                предприятия</p>
+                            <span class="matrix-row__span matrix-row__span--plus">+</span>
+                            <span class="matrix-row__span matrix-row__span--plus">+</span>
+                            <span class="matrix-row__span matrix-row__span--plus">+</span>
+                        </div>
+                        <div class="matrix-row">
+                            <p class="matrix-row__text">Управление профилями устройств</p>
+                            <span class="matrix-row__span matrix-row__span--plus">+</span>
+                            <span class="matrix-row__span matrix-row__span--minus">-</span>
+                            <span class="matrix-row__span matrix-row__span--plus">+</span>
+                        </div>
+                        <div class="matrix-row">
+                            <p class="matrix-row__text">Управление резервным доступом</p>
+                            <span class="matrix-row__span matrix-row__span--plus">+</span>
+                            <span class="matrix-row__span matrix-row__span--minus">-</span>
+                            <span class="matrix-row__span matrix-row__span--plus">+</span>
+                        </div>
+                        <div class="matrix-row">
+                            <p class="matrix-row__text">Управление дашбордами</p>
+                            <span class="matrix-row__span matrix-row__span--plus">+</span>
+                            <span class="matrix-row__span matrix-row__span--minus">-</span>
+                            <span class="matrix-row__span matrix-row__span--plus">+</span>
+                        </div>
+                        <div class="matrix-row">
+                            <p class="matrix-row__text">Управление виджетами</p>
+                            <span class="matrix-row__span matrix-row__span--plus">+</span>
+                            <span class="matrix-row__span matrix-row__span--minus">-</span>
+                            <span class="matrix-row__span matrix-row__span--plus">+</span>
+                        </div>
+                        <div class="matrix-row">
+                            <p class="matrix-row__text">Возможность получения email уведомлений</p>
+                            <span class="matrix-row__span matrix-row__span--plus">+</span>
+                            <span class="matrix-row__span matrix-row__span--plus">+</span>
+                            <span class="matrix-row__span matrix-row__span--plus">+</span>
+                        </div>
+                        <div class="matrix-row">
+                            <p class="matrix-row__text">Возможность получения SMS уведомлений</p>
+                            <span class="matrix-row__span matrix-row__span--plus">+</span>
+                            <span class="matrix-row__span matrix-row__span--plus">+</span>
+                            <span class="matrix-row__span matrix-row__span--plus">+</span>
+                        </div>
+                        <div class="matrix-row">
+                            <p class="matrix-row__text">Возможность получения Telegram уведомлений</p>
+                            <span class="matrix-row__span matrix-row__span--plus">+</span>
+                            <span class="matrix-row__span matrix-row__span--plus">+</span>
+                            <span class="matrix-row__span matrix-row__span--plus">+</span>
+                        </div>
+                        <div class="matrix-row">
+                            <p class="matrix-row__text">Открытый API</p>
+                            <span class="matrix-row__span matrix-row__span--plus">+</span>
+                            <span class="matrix-row__span matrix-row__span--plus">+</span>
+                            <span class="matrix-row__span matrix-row__span--plus">+</span>
+                        </div>
+                        <div class="matrix-row">
+                            <p class="matrix-row__text">Кастомизация (White label)</p>
+                            <span class="matrix-row__span matrix-row__span--plus">+</span>
+                            <span class="matrix-row__span matrix-row__span--plus">+</span>
+                            <span class="matrix-row__span matrix-row__span--plus">+</span>
+                        </div>
+                        <div class="matrix-row">
+                            <p class="matrix-row__text">Привязка к домену клиента</p>
+                            <span class="matrix-row__span matrix-row__span--plus">+</span>
+                            <span class="matrix-row__span matrix-row__span--plus">+</span>
+                            <span class="matrix-row__span matrix-row__span--plus">+</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--matrix-mobile-->
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="matrix-mobile">
+                    <h2 class="matrix-mobile__title">Матрица сравнения характеристик</h2>
+                    <div class="mobile-table">
+                        <div class="mobile-row">
+                            <p class="mobile-row__title">Облачные решения</p>
+                            <div class="mobile-block">
+                                <p class="mobile-block__title">Сбор информации в базу данных</p>
+                                <span class="mobile-block__span mobile-block__span--plus">+</span>
+                            </div>
+                            <div class="mobile-block">
+                                <p class="mobile-block__title">Нет ограничений по продолжительности хранения данных</p>
+                                <span class="mobile-block__span mobile-block__span--minus">-</span>
+                            </div>
+                            <div class="mobile-block">
+                                <p class="mobile-block__title">Нет ограничений по объему получаемых данных от IoT
+                                    устройств</p>
+                                <span class="mobile-block__span mobile-block__span--minus">-</span>
+                            </div>
+                            <div class="mobile-block">
+                                <p class="mobile-block__title">Ограничения на сценарии по обработке данных</p>
+                                <span class="mobile-block__span mobile-block__span--plus">+</span>
+                            </div>
+                            <div class="mobile-block">
+                                <p class="mobile-block__title">Доступ на управление ролями</p>
+                                <span class="mobile-block__span mobile-block__span--plus">+</span>
+                            </div>
+                            <div class="mobile-block">
+                                <p class="mobile-block__title">Доступ на управление группами</p>
+                                <span class="mobile-block__span mobile-block__span--plus">+</span>
+                            </div>
+                            <div class="mobile-block">
+                                <p class="mobile-block__title">Доступ на управление группами устройств</p>
+                                <span class="mobile-block__span mobile-block__span--plus">+</span>
+                            </div>
+                            <div class="mobile-block">
+                                <p class="mobile-block__title">Интеграции системы с существующими внутренними системами
+                                    предприятия</p>
+                                <span class="mobile-block__span mobile-block__span--plus">+</span>
+                            </div>
+                            <div class="mobile-block">
+                                <p class="mobile-block__title">Управление профилями устройств</p>
+                                <span class="mobile-block__span mobile-block__span--plus">+</span>
+                            </div>
+                            <div class="mobile-block">
+                                <p class="mobile-block__title">Управление резервным доступом</p>
+                                <span class="mobile-block__span mobile-block__span--plus">+</span>
+                            </div>
+                            <div class="mobile-block">
+                                <p class="mobile-block__title">Управление дашбордами</p>
+                                <span class="mobile-block__span mobile-block__span--plus">+</span>
+                            </div>
+                            <div class="mobile-block">
+                                <p class="mobile-block__title">Управление виджетами</p>
+                                <span class="mobile-block__span mobile-block__span--plus">+</span>
+                            </div>
+                            <div class="mobile-block">
+                                <p class="mobile-block__title">Возможность получения email уведомлений</p>
+                                <span class="mobile-block__span mobile-block__span--plus">+</span>
+                            </div>
+                            <div class="mobile-block">
+                                <p class="mobile-block__title">Возможность получения SMS уведомлений</p>
+                                <span class="mobile-block__span mobile-block__span--plus">+</span>
+                            </div>
+                            <div class="mobile-block">
+                                <p class="mobile-block__title">Возможность получения Telegram уведомлений</p>
+                                <span class="mobile-block__span mobile-block__span--plus">+</span>
+                            </div>
+                            <div class="mobile-block">
+                                <p class="mobile-block__title">Открытый API</p>
+                                <span class="mobile-block__span mobile-block__span--plus">+</span>
+                            </div>
+                            <div class="mobile-block">
+                                <p class="mobile-block__title">Кастомизация (White label)</p>
+                                <span class="mobile-block__span mobile-block__span--plus">+</span>
+                            </div>
+                            <div class="mobile-block">
+                                <p class="mobile-block__title">Привязка к домену клиента</p>
+                                <span class="mobile-block__span mobile-block__span--plus">+</span>
+                            </div>
+                        </div>
+                        <div class="mobile-row">
+                            <p class="mobile-row__title">Локальное решение</p>
+                            <div class="mobile-block">
+                                <p class="mobile-block__title">Сбор информации в базу данных</p>
+                                <span class="mobile-block__span mobile-block__span--plus">+</span>
+                            </div>
+                            <div class="mobile-block">
+                                <p class="mobile-block__title">Нет ограничений по продолжительности хранения данных</p>
+                                <span class="mobile-block__span mobile-block__span--plus">+</span>
+                            </div>
+                            <div class="mobile-block">
+                                <p class="mobile-block__title">Нет ограничений по объему получаемых данных от IoT
+                                    устройств</p>
+                                <span class="mobile-block__span mobile-block__span--plus">+</span>
+                            </div>
+                            <div class="mobile-block">
+                                <p class="mobile-block__title">Ограничения на сценарии по обработке данных</p>
+                                <span class="mobile-block__span mobile-block__span--plus">+</span>
+                            </div>
+                            <div class="mobile-block">
+                                <p class="mobile-block__title">Доступ на управление ролями</p>
+                                <span class="mobile-block__span mobile-block__span--minus">-</span>
+                            </div>
+                            <div class="mobile-block">
+                                <p class="mobile-block__title">Доступ на управление группами</p>
+                                <span class="mobile-block__span mobile-block__span--minus">-</span>
+                            </div>
+                            <div class="mobile-block">
+                                <p class="mobile-block__title">Доступ на управление группами устройств</p>
+                                <span class="mobile-block__span mobile-block__span--minus">-</span>
+                            </div>
+                            <div class="mobile-block">
+                                <p class="mobile-block__title">Интеграции системы с существующими внутренними системами
+                                    предприятия</p>
+                                <span class="mobile-block__span mobile-block__span--plus">+</span>
+                            </div>
+                            <div class="mobile-block">
+                                <p class="mobile-block__title">Управление профилями устройств</p>
+                                <span class="mobile-block__span mobile-block__span--minus">-</span>
+                            </div>
+                            <div class="mobile-block">
+                                <p class="mobile-block__title">Управление резервным доступом</p>
+                                <span class="mobile-block__span mobile-block__span--minus">-</span>
+                            </div>
+                            <div class="mobile-block">
+                                <p class="mobile-block__title">Управление дашбордами</p>
+                                <span class="mobile-block__span mobile-block__span--minus">-</span>
+                            </div>
+                            <div class="mobile-block">
+                                <p class="mobile-block__title">Управление виджетами</p>
+                                <span class="mobile-block__span mobile-block__span--minus">-</span>
+                            </div>
+                            <div class="mobile-block">
+                                <p class="mobile-block__title">Возможность получения email уведомлений</p>
+                                <span class="mobile-block__span mobile-block__span--plus">+</span>
+                            </div>
+                            <div class="mobile-block">
+                                <p class="mobile-block__title">Возможность получения SMS уведомлений</p>
+                                <span class="mobile-block__span mobile-block__span--minus">-</span>
+                            </div>
+                            <div class="mobile-block">
+                                <p class="mobile-block__title">Возможность получения Telegram уведомлений</p>
+                                <span class="mobile-block__span mobile-block__span--plus">+</span>
+                            </div>
+                            <div class="mobile-block">
+                                <p class="mobile-block__title">Открытый API</p>
+                                <span class="mobile-block__span mobile-block__span--plus">+</span>
+                            </div>
+                            <div class="mobile-block">
+                                <p class="mobile-block__title">Кастомизация (White label)</p>
+                                <span class="mobile-block__span mobile-block__span--plus">+</span>
+                            </div>
+                            <div class="mobile-block">
+                                <p class="mobile-block__title">Привязка к домену клиента</p>
+                                <span class="mobile-block__span mobile-block__span--plus">+</span>
+                            </div>
+                        </div>
+                        <div class="mobile-row">
+                            <p class="mobile-row__title">Кастомное решение</p>
+                            <div class="mobile-block">
+                                <p class="mobile-block__title">Сбор информации в базу данных</p>
+                                <span class="mobile-block__span mobile-block__span--plus">+</span>
+                            </div>
+                            <div class="mobile-block">
+                                <p class="mobile-block__title">Нет ограничений по продолжительности хранения данных</p>
+                                <span class="mobile-block__span mobile-block__span--plus">+</span>
+                            </div>
+                            <div class="mobile-block">
+                                <p class="mobile-block__title">Нет ограничений по объему получаемых данных от IoT
+                                    устройств</p>
+                                <span class="mobile-block__span mobile-block__span--plus">+</span>
+                            </div>
+                            <div class="mobile-block">
+                                <p class="mobile-block__title">Ограничения на сценарии по обработке данных</p>
+                                <span class="mobile-block__span mobile-block__span--minus">-</span>
+                            </div>
+                            <div class="mobile-block">
+                                <p class="mobile-block__title">Доступ на управление ролями</p>
+                                <span class="mobile-block__span mobile-block__span--plus">+</span>
+                            </div>
+                            <div class="mobile-block">
+                                <p class="mobile-block__title">Доступ на управление группами</p>
+                                <span class="mobile-block__span mobile-block__span--plus">+</span>
+                            </div>
+                            <div class="mobile-block">
+                                <p class="mobile-block__title">Доступ на управление группами устройств</p>
+                                <span class="mobile-block__span mobile-block__span--plus">+</span>
+                            </div>
+                            <div class="mobile-block">
+                                <p class="mobile-block__title">Интеграции системы с существующими внутренними системами
+                                    предприятия</p>
+                                <span class="mobile-block__span mobile-block__span--plus">+</span>
+                            </div>
+                            <div class="mobile-block">
+                                <p class="mobile-block__title">Управление профилями устройств</p>
+                                <span class="mobile-block__span mobile-block__span--plus">+</span>
+                            </div>
+                            <div class="mobile-block">
+                                <p class="mobile-block__title">Управление резервным доступом</p>
+                                <span class="mobile-block__span mobile-block__span--plus">+</span>
+                            </div>
+                            <div class="mobile-block">
+                                <p class="mobile-block__title">Управление дашбордами</p>
+                                <span class="mobile-block__span mobile-block__span--plus">+</span>
+                            </div>
+                            <div class="mobile-block">
+                                <p class="mobile-block__title">Управление виджетами</p>
+                                <span class="mobile-block__span mobile-block__span--plus">+</span>
+                            </div>
+                            <div class="mobile-block">
+                                <p class="mobile-block__title">Возможность получения email уведомлений</p>
+                                <span class="mobile-block__span mobile-block__span--plus">+</span>
+                            </div>
+                            <div class="mobile-block">
+                                <p class="mobile-block__title">Возможность получения SMS уведомлений</p>
+                                <span class="mobile-block__span mobile-block__span--plus">+</span>
+                            </div>
+                            <div class="mobile-block">
+                                <p class="mobile-block__title">Возможность получения Telegram уведомлений</p>
+                                <span class="mobile-block__span mobile-block__span--plus">+</span>
+                            </div>
+                            <div class="mobile-block">
+                                <p class="mobile-block__title">Открытый API</p>
+                                <span class="mobile-block__span mobile-block__span--plus">+</span>
+                            </div>
+                            <div class="mobile-block">
+                                <p class="mobile-block__title">Кастомизация (White label)</p>
+                                <span class="mobile-block__span mobile-block__span--plus">+</span>
+                            </div>
+                            <div class="mobile-block">
+                                <p class="mobile-block__title">Привязка к домену клиента</p>
+                                <span class="mobile-block__span mobile-block__span--plus">+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--faq-section-->
+    <div class="faq-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="faq-wrapper">
+                        <h2 class="faq-wrapper__title">FAQ</h2>
+                        <div class="accordion accordion-flush faq-grid" id="accordionFlushExample">
+                            <div class="accordion-column">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                                aria-controls="flush-collapseOne">
+                                            <p>Что такое Cuba IoT Platform?</p>
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                         aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <p class="accordion-body__text">Платформа IoT решений Сubа позволяет
+                                                создавать
+                                                решения для мониторинга инфраструктуры и анализа эффективности вашего
+                                                бизнеса. Экосистема Сubа предоставляет возможность быстро развернуть и
+                                                гибко
+                                                модернизировать сервисы на вашем предприятии благодаря применению
+                                                оборудования собственного производства. Продвинутая система визуализации
+                                                обеспечивает доступ к данным в режиме реального времени, гарантируя
+                                                своевременное реагирование на критически важные события.</p>
+                                            <p class="accordion-body__text"> Экосистема Сuba включает в себя семь
+                                                отраслевых
+                                                решений. За каждый сервисом стоит команда инженеров, программистов, data
+                                                science специалистов — международных экспертов цифровизации. Решения
+                                                Сubа и
+                                                продукты партнёров, созданные на основе платформы уже работают на
+                                                промышленных предприятиях в Казахстане. Наша компания активно
+                                                сотрудничает с
+                                                системными интеграторами, IT-компаниями, поставщиками инфраструктуры и
+                                                центрами экспертизы в рамках интеграции концепции «Индустрия 4.0»</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingTwo">
+                                        <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                                aria-controls="flush-collapseTwo">
+                                            <p>Как интегрировать Cuba IoT Platform на мой объект?</p>
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                         aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <p class="accordion-body__text mb-1">Этапы интеграции Cuba на ваше
+                                                предприятие
+                                                состоят из 5 шагов:</p>
+                                            <ol class="accordion-list--number" type="1">
+                                                <li class="accordion-item">Анализ состояния системы</li>
+                                                <li class="accordion-item">Монтаж оборудования</li>
+                                                <li class="accordion-item">Конфигурирование платформы</li>
+                                                <li class="accordion-item">Визуализация данных</li>
+                                                <li class="accordion-item">Прогнозирование</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingThree">
+                                        <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                                aria-controls="flush-collapseThree">
+                                            <p>Чем полезна Cuba IoT Platform для моего бизнеса?</p>
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                         aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <p class="accordion-body__text">Вы можете собрать в
+                                                единую систему показатели для эффективной организации работ с точки
+                                                зрения
+                                                эффективности, прозрачности, стабильности и защищенности вашего
+                                                бизнеса</p>
+                                            <ul class="accordion-list accordion-list--no-disc">
+                                                <li class="accordion-item">Платформа Cuba предлагает:</li>
+                                                <li class="accordion-item">Возможность подключения к любой
+                                                    инфраструктуре
+                                                    IoT (Google, Amazon, Microsoft)
+                                                </li>
+                                                <li class="accordion-item">Масштабируемость - гибкое и плановое
+                                                    подключение
+                                                    нового оборудования к сервису с минимальными затратами со стороны
+                                                    клиента
+                                                </li>
+                                                <li class="accordion-item">Подключение через облако</li>
+                                                <li class="accordion-item">Минимальные требования к производительности
+                                                    серверного оборудования
+                                                </li>
+                                                <li class="accordion-item">Нет ограничений по количеству подключаемых
+                                                    датчиков
+                                                </li>
+                                                <li class="accordion-item">Нет ограничений по типу датчиков</li>
+                                                <li class="accordion-item">Считывание до 10 000 показателей в секунду
+                                                </li>
+                                                <li class="accordion-item">Гибкое ценообразование</li>
+                                                <li class="accordion-item">Персонализированные дашборды и виджеты</li>
+                                                <li class="accordion-item">Мобильное приложение</li>
+                                                <li class="accordion-item">Локальный склад комплектующих</li>
+                                                <li class="accordion-item">Возможность беспроводного подключения</li>
+                                                <li class="accordion-item">Проверка актуальности полученных данных</li>
+                                                <li class="accordion-item"> Лёгкость интеграции системы с существующими
+                                                    внутренними системами предприятия
+                                                </li>
+                                                <li class="accordion-item">Продвинутая система безопасности</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingFour">
+                                        <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                                aria-controls="flush-collapseFour">
+                                            <p>Где размещается Cuba IoT Platform?</p>
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                         aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <p class="accordion-body__text">Вы можете разместить платформу в
+                                                <a href="#" class="accordion-body__link">облаке</a> , либо на
+                                                собственных серверных мощностях. Поддерживаются различные системы
+                                                оповещения: мессенджеры, почта, SMS
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingFive">
+                                        <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                                aria-controls="flush-collapseFive">
+                                            <p>Как подключиться к Cuba IoT Platform?</p>
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseFive" class="accordion-collapse collapse"
+                                         aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <p class="accordion-body__text">Вы можете ознакомиться с демо версия
+                                                платформы
+                                                Cuba по ссылке. Шаги интеграции описаны тут (2 FAQ). Более подробную
+                                                информацию вы можете получить, заполнив форму заявки.
+                                                Cuba обеспечивает поддержку всех распространенных промышленных
+                                                протоколов.
+                                                Существующие устройства могут быть подключены к платформе с помощью Cuba
+                                                Gateway. Более подробную информацию вы можете получить, заполнив
+                                                <a href="#" class="accordion-body__link">форму заявки.</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingSix">
+                                        <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#flush-collapseSix" aria-expanded="false"
+                                                aria-controls="flush-collapseSix">
+                                            <p>Сколько устройств поддерживает Cuba IoT Platform?</p>
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseSix" class="accordion-collapse collapse"
+                                         aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <p class="accordion-body__text">Платформа Сuba горизонтально масштабируема,
+                                                то
+                                                есть мы можем создать систему мониторинга с нуля, а также подключиться к
+                                                существующей на объекте. Каждый серверный узел в кластере уникален.
+                                                Масштабируемость достигается с помощью алгоритма последовательного
+                                                хэширования для балансировки нагрузки между узлами кластера. Фактическая
+                                                производительность зависит от сценария использования подключенных
+                                                устройств.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingSeven">
+                                        <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#flush-collapseSeven" aria-expanded="false"
+                                                aria-controls="flush-collapseSeven">
+                                            <p>Где Cuba IoT Platform хранит данные?</p>
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseSeven" class="accordion-collapse collapse"
+                                         aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <p class="accordion-body__text">Данные хранятся на территории Казахстана.
+                                                Данные
+                                                сервера хорошо подходит для хранения и запроса данных временных рядов и
+                                                обеспечивает высокую доступность и отказоустойчивость.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingEight">
+                                        <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#flush-collapseEight" aria-expanded="false"
+                                                aria-controls="flush-collapseEight">
+                                            <p>Могу ли я обращаться в службу поддержки при наличии вопросов по работе
+                                                платформы
+                                                Cuba IoT Platform?</p>
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseEight" class="accordion-collapse collapse"
+                                         aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <p class="accordion-body__text">Безусловно да. Наша служба поддержки в
+                                                рамках
+                                                вашей подписки на Cuba обязательно ответит на вопросы.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-column">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingNine">
+                                        <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#flush-collapseNine" aria-expanded="false"
+                                                aria-controls="flush-collapseNine">
+                                            <p>У меня еще остались вопросы, к кому обратиться?</p>
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseNine" class="accordion-collapse collapse"
+                                         aria-labelledby="flush-headingNine" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <p class="accordion-body__text">Вы можете задать любой интересующий вас
+                                                вопрос,
+                                                заполнив форму заявки по
+                                                <a href="#" class="accordion-body__link">ссылке</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingTen">
+                                        <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#flush-collapseTen" aria-expanded="false"
+                                                aria-controls="flush-collapseTen">
+                                            <p>Я не нашел шлюза, который мне нужен в списке Cuba IoT Platform. Могу ли я
+                                                сделать кастомный шлюз под мои специфичные нужды?</p>
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseTen" class="accordion-collapse collapse"
+                                         aria-labelledby="flush-headingTen" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <p class="accordion-body__text">Отличительным преимуществом платформы
+                                                является
+                                                то, что мы можем создать датчик с нуля точно под ваш запрос. Далее
+                                                интегрировать его в существующую систему мониторинга либо подключить в
+                                                систему платформы Сuba
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingEleven">
+                                        <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#flush-collapseEleven" aria-expanded="false"
+                                                aria-controls="flush-collapseEleven">
+                                            <p>Насколько система Cuba IoT Platform безопасна для хранения моих
+                                                данных?</p>
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseEleven" class="accordion-collapse collapse"
+                                         aria-labelledby="flush-headingEleven" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <p class="accordion-body__text">Cuba обладает продвинутой системой
+                                                безопасности
+                                                24/7/365
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingTwelve">
+                                        <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#flush-collapseTwelve" aria-expanded="false"
+                                                aria-controls="flush-collapseTwelve">
+                                            <p>Может ли платформа выявлять тренды в показаниях датчиков?</p>
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseTwelve" class="accordion-collapse collapse"
+                                         aria-labelledby="flush-headingTwelve" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <p class="accordion-body__text">Да, безусловно. Миссией платформы Cuba
+                                                является
+                                                снижения затрат бизнеса, а также нахождения альтернативных способов
+                                                дохода в
+                                                формате качественной работы с данными. Как это работает?
+                                            </p>
+                                            <ol class="accordion-list--number">
+                                                <li class="accordion-item">Вы подключаетесь к системе Cuba</li>
+                                                <li class="accordion-item">Данные консолидируются в течении минимум 1
+                                                    месяца
+                                                </li>
+                                                <li class="accordion-item">Подключается глубинная аналитика</li>
+                                                <li class="accordion-item">В системе больших данных находятся
+                                                    совпадения,
+                                                    тренды, прогнозы
+                                                </li>
+                                                <li class="accordion-item">Отчеты выгружаются в принятой вами
+                                                    периодичности
+                                                </li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingThirteen">
+                                        <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#flush-collapseThirteen" aria-expanded="false"
+                                                aria-controls="flush-collapseThirteen">
+                                            <p>Какие успешные кейсы Сuba IoT Platform уже есть?</p>
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseThirteen" class="accordion-collapse collapse"
+                                         aria-labelledby="flush-headingThirteen"
+                                         data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <p class="accordion-body__text">Безусловно есть. С существующими кейсами вы
+                                                можете ознакомиться по <a href="#"
+                                                                          class="accordion-body__link">ссылке</a>.
+                                                Если у вас есть вопросы по работе платформы
+                                                Cuba, вы можете оставить свой запрос, заполнив
+                                                <a href="#" class="accordion-body__link">форму заявки</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingFourteen">
+                                        <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#flush-collapseFourteen" aria-expanded="false"
+                                                aria-controls="flush-collapseFourteen">
+                                            <p>Я пока не уверен(-а) в неообходимости подключения к Cuba IoT Platform,
+                                                есть ли
+                                                опция пробной версии в течении определенного периода времени?</p>
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseFourteen" class="accordion-collapse collapse"
+                                         aria-labelledby="flush-headingFourteen"
+                                         data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <p class="accordion-body__text">Безусловно есть. Вы можете подключить
+                                                пробную
+                                                версию бесплатно Cuba на свой объект от одного до трех месяцев.
+                                                Узнавайте
+                                                подробности заполнив заявку по
+                                                <a href="#" class="accordion-body__link">ссылке</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<!--footer-->
+<footer class="footer">
+    <!--mailing-list-->
+    <div class="footer-mailing-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-mailing">
+                        <a href="/">
+                            <img src="/img/icons/logo-img.png" alt="" class="footer-mailing__img">
+                        </a>
+                        <a href="#" class="button-yellow">Подписаться на рассылку</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--main-footer-->
+    <div class="footer-wrapper-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-wrapper">
+                        <div class="footer-nav">
+                            <a href="tel:+7 705 171 97 16" class="footer-nav__link">+7 705 171 97 16</a>
+                            <a href="mailto:sales@tocloud.kz" class="footer-nav__link">sales@tocloud.kz</a>
+                            <a href="#" class="footer-nav__link">смотреть демо</a>
+                            <a href="#" class="footer-nav__link">тарифы</a>
+
+                        </div>
+                        <div class="footer-nav">
+                            <a href="#" class="footer-nav__link footer-nav__link--border">LinkedIn</a>
+                            <a href="#" class="footer-nav__link footer-nav__link--border">Telegram</a>
+                            <a href="#" class="footer-nav__link footer-nav__link--border">YouTube</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="/js/index.js"></script>
+<script src="/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
