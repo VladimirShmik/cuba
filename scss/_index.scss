@@ -6,7 +6,7 @@
 .item-row{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-auto-rows: 470px;
+  grid-auto-rows: 500px;
   @media (min-width: 320px) and (max-width: 1023px) {
   }
   @media (min-width: 320px) and (max-width: 1023px) {
@@ -123,6 +123,7 @@
   padding-left: 30px;
   position: relative;
   height: 100%;
+  max-width: 630px;
   @media (min-width: 320px) and (max-width: 1024px) {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -249,25 +250,46 @@
   }
   &--agro{
     background: linear-gradient(307.27deg, #9FC777 -5.01%, #F7FCF2 108.32%);
+    &:hover{
+      background: #9FC777;
+    }
 
   }
   &--health{
     background: linear-gradient(311.82deg, #EB675C -9.04%, #FFF7F6 100.33%);
+    &:hover{
+      background: #EB675C;
+    }
   }
   &--school{
     background: linear-gradient(317.15deg, #AC63FF -10.26%, #FAF6FF 101.09%);
+    &:hover{
+      background: #AC63FF;
+    }
   }
   &--monitoring{
     background: linear-gradient(307.27deg, #71CACE -5.01%, #F7FCFC 108.32%);
+    &:hover{
+      background: #6DD5D9;
+    }
   }
   &--retail{
     background: linear-gradient(311.82deg, #E6B8DA -9.04%, #FFF6FD 100.33%);
+    &:hover{
+      background: #E6B8DA;
+    }
   }
   &--office{
     background: linear-gradient(317.15deg, #BFBFBF -10.26%, #F7F7F7 101.09%);
+    &:hover{
+      background: #BFBFBF;
+    }
   }
   &--mining{
     background: linear-gradient(317.15deg, #A38C72 -10.26%, #F2F1EF 101.09%);
+    &:hover{
+      background: #A38C72;
+    }
   }
   &__icon{
     width: 60px;

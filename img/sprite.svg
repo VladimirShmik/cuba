@@ -791,4 +791,7 @@
         <rect x="22" y="18.7051" width="4.66011" height="24.2326" rx="2.33005" transform="rotate(135 22 18.7051)"
               fill="#E6E6E6"/>
     </symbol>
+    <symbol viewBox="0 0 17 30" id="pag-icon">
+        <path d="M15.75 1.5L2.25 15L15.75 28.5" stroke="#BFBFBF" stroke-width="2"/>
+    </symbol>
 </symbol>

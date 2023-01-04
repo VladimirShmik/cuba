@@ -7,8 +7,10 @@
   color: #292D32;
   &--border{
    display: grid;
-    grid-template-columns: 20px 1fr;
+    grid-template-columns: 20px auto;
     align-items: center;
+    justify-content: center;
+    justify-items: center;
     grid-gap: 10px;
     border-radius: 20px;
     height: 100%;
