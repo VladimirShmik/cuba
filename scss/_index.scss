@@ -74,15 +74,18 @@
     position: absolute;
     left: 4%;
     top: 31%;
+    height: auto;
     @media (min-width: 1441px) and (max-width: 1700px) {
       top: 27%;
       left: 6%;
       width: 815px;
+      height: auto;
     }
     @media (min-width: 1701px) and (max-width: 1920px) {
-      top: 29%;
+      top: 24%;
       left: 11%;
       width: 815px;
+      height: auto;
     }
     @media (min-width: 320px) and (max-width: 1023px) {
      position: static;
