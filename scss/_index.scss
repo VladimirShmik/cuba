@@ -74,10 +74,14 @@
     position: absolute;
     left: 4%;
     top: 31%;
-
-    @media (min-width: 1441px) and (max-width: 2560px) {
-      top: 18%;
-      left: 20%;
+    @media (min-width: 1441px) and (max-width: 1700px) {
+      top: 27%;
+      left: 6%;
+      width: 815px;
+    }
+    @media (min-width: 1701px) and (max-width: 1920px) {
+      top: 29%;
+      left: 11%;
       width: 815px;
     }
     @media (min-width: 320px) and (max-width: 1200px) {

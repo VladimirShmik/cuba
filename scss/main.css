@@ -949,10 +949,17 @@ p {
   left: 4%;
   top: 31%;
 }
-@media (min-width: 1441px) and (max-width: 2560px) {
+@media (min-width: 1441px) and (max-width: 1700px) {
   .main-header-img__img {
-    top: 18%;
-    left: 20%;
+    top: 27%;
+    left: 6%;
+    width: 815px;
+  }
+}
+@media (min-width: 1701px) and (max-width: 1920px) {
+  .main-header-img__img {
+    top: 29%;
+    left: 11%;
     width: 815px;
   }
 }
