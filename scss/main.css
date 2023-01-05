@@ -946,9 +946,10 @@ p {
 }
 .main-header-img__img {
   position: absolute;
-  left: 4%;
+  left: 22%;
   top: 31%;
   height: auto;
+  width: 815px;
 }
 @media (min-width: 1441px) and (max-width: 1700px) {
   .main-header-img__img {
@@ -960,7 +961,7 @@ p {
 }
 @media (min-width: 1701px) and (max-width: 1920px) {
   .main-header-img__img {
-    top: 24%;
+    top: 14%;
     left: 11%;
     width: 815px;
     height: auto;
