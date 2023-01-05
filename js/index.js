@@ -15,3 +15,13 @@ function mobileClose(){
 }
 menuBtn.addEventListener("click", mobileToggle);
 menuClose.addEventListener("click", mobileClose);
+const solutionsGrid = document.querySelector('.solutions-grid');
+const solutionsBtn = document.querySelector('.solutions-btn');
+const solutionsHide =document.querySelector(".solutions-btn__text__hide");
+const solutionsShow =document.querySelector(".solutions-btn__text__  show");
+function solutionsToggle(){
+    solutionsGrid.classList.toggle('solutions-grid--show');
+    solutionsHide.classList.toggle('solutions-btn__text--show');
+    solutionsShow.classList.toggle('solutions-btn__text--hide');
+}
+solutionsBtn.addEventListener("click",solutionsToggle);

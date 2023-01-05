@@ -1062,7 +1062,16 @@ p {
   flex-direction: column;
   margin: 60px 0;
 }
-.solutions-wrapper__btn {
+.solutions-wrapper__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  color: #292D32;
+  margin-bottom: 45px;
+}
+
+.solutions-btn {
   font-weight: 700;
   font-size: 16px;
   text-align: center;
@@ -1073,13 +1082,17 @@ p {
   width: fit-content;
   margin: 40px auto 0;
 }
-.solutions-wrapper__title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 44px;
-  text-align: center;
-  color: #292D32;
-  margin-bottom: 45px;
+.solutions-btn__text__show {
+  display: block;
+}
+.solutions-btn__text__hide {
+  display: none;
+}
+.solutions-btn__text--show {
+  display: block;
+}
+.solutions-btn__text--hide {
+  display: none;
 }
 
 .solutions-grid {
@@ -1089,14 +1102,20 @@ p {
   grid-auto-rows: 345px;
   justify-content: center;
 }
+.solutions-grid--show .solutions-item {
+  display: flex;
+}
 
 .solutions-item {
   padding: 60px 30px 30px;
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   border-radius: 20px;
+}
+.solutions-item:nth-child(-n+3) {
+  display: flex;
 }
 .solutions-item:hover .solutions-row__img {
   display: block;
@@ -2983,10 +3002,14 @@ p {
 .iot-block {
   display: flex;
   flex-direction: column;
+  width: fit-content;
 }
 .iot-block__img {
   margin-bottom: 20px;
-  width: fit-content;
+  fill: none;
+  width: 100%;
+  max-width: 440px;
+  height: 100%;
 }
 @media (min-width: 320px) and (max-width: 1439px) {
   .iot-block__img {
@@ -3012,6 +3035,8 @@ p {
 }
 .iot-box__img {
   position: absolute;
+  width: fit-content;
+  max-width: 475px;
   right: -5%;
   top: -30px;
 }

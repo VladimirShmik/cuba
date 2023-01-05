@@ -11,9 +11,13 @@
 .iot-block{
   display: flex;
   flex-direction: column;
+  width: fit-content;
   &__img{
     margin-bottom: 20px;
-    width: fit-content;
+    fill: none;
+    width: 100%;
+    max-width: 440px;
+    height: 100%;
     @media (min-width: 320px) and (max-width: 1439px) {
       max-width: 320px;
       width: fit-content;
@@ -36,6 +40,8 @@
   position: relative;
   &__img{
     position: absolute;
+    width: fit-content;
+    max-width: 475px;
     right: -5%;
     top: -30px;
     @media (min-width: 320px) and (max-width: 1439px) {
