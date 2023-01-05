@@ -286,6 +286,7 @@
   &__img{
   position: absolute;
   left: 13%;
+    max-width: 810px;
     @media (min-width: 1440px) and (max-width: 1680px) {
       left: 4%;
 
