@@ -947,23 +947,31 @@ p {
 .main-header-img__img {
   position: absolute;
   left: 22%;
-  top: 31%;
+  top: 21%;
   height: auto;
-  width: 815px;
+  width: 740px;
 }
 @media (min-width: 1441px) and (max-width: 1700px) {
   .main-header-img__img {
     top: 27%;
     left: 6%;
-    width: 815px;
+    width: 740px;
+    height: auto;
+  }
+}
+@media (min-width: 1201px) and (max-width: 1440px) {
+  .main-header-img__img {
+    top: 21%;
+    left: 0%;
+    width: 740px;
     height: auto;
   }
 }
 @media (min-width: 1701px) and (max-width: 1920px) {
   .main-header-img__img {
-    top: 14%;
-    left: 11%;
-    width: 815px;
+    top: 21%;
+    left: 14%;
+    width: 740px;
     height: auto;
   }
 }
@@ -978,7 +986,7 @@ p {
   .main-header-img__img {
     position: static;
     margin: 0 auto;
-    width: auto;
+    width: 100%;
   }
 }
 
@@ -2090,6 +2098,16 @@ p {
   border-radius: 20px;
   padding: 18px 15px;
 }
+.vacancies-item:hover {
+  cursor: pointer;
+}
+.vacancies-item:hover .button-blue {
+  border-color: #FFFFFF;
+  color: #FFFFFF;
+}
+.vacancies-item:hover .button-blue__icon {
+  stroke: #FFFFFF;
+}
 .vacancies-item__title {
   font-weight: 700;
   font-size: 16px;
@@ -2105,6 +2123,9 @@ p {
   font-size: 14px;
   line-height: 16px;
   color: #292D32;
+}
+.vacancies-item .button-blue {
+  color: #2C5BDB;
 }
 
 /*contacts-page*/

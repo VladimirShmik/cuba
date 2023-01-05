@@ -73,19 +73,25 @@
   &__img{
     position: absolute;
     left: 22%;
-    top: 31%;
+    top: 21%;
     height: auto;
-    width: 815px;
+    width: 740px;
     @media (min-width: 1441px) and (max-width: 1700px) {
       top: 27%;
       left: 6%;
-      width: 815px;
+      width: 740px;
+      height: auto;
+    }
+    @media (min-width: 1201px) and (max-width: 1440px) {
+      top: 21%;
+      left: 0%;
+      width: 740px;
       height: auto;
     }
     @media (min-width: 1701px) and (max-width: 1920px) {
-      top: 14%;
-      left: 11%;
-      width: 815px;
+      top: 21%;
+      left: 14%;
+      width: 740px;
       height: auto;
     }
     @media (min-width: 320px) and (max-width: 1023px) {
@@ -96,7 +102,7 @@
     @media (min-width: 1023px) and (max-width: 1200px) {
       position: static;
       margin: 0 auto;
-      width: auto;
+      width: 100%;
     }
   }
 }

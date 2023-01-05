@@ -259,7 +259,16 @@
   background: #F2F2F2;
   border-radius: 20px;
   padding: 18px 15px;
-
+ &:hover{
+   cursor: pointer;
+   .button-blue{
+     border-color: #FFFFFF;
+     color: #FFFFFF;
+     &__icon{
+       stroke:  #FFFFFF;
+     }
+   }
+ }
   &__title {
     font-weight: 700;
     font-size: 16px;
@@ -276,6 +285,9 @@
     font-size: 14px;
     line-height: 16px;
     color: #292D32;
+  }
+  .button-blue{
+      color: #2C5BDB;
   }
 }
 
