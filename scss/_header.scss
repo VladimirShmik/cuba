@@ -21,6 +21,10 @@
   align-items: center;
 }
 .header-logo{
+  &__img{
+    width: 100%;
+    object-fit: cover;
+  }
 
 }
 .header-nav{

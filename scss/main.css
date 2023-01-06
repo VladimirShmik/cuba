@@ -352,6 +352,11 @@ p {
   align-items: center;
 }
 
+.header-logo__img {
+  width: 100%;
+  object-fit: cover;
+}
+
 .header-nav {
   display: flex;
   align-items: center;
@@ -807,8 +812,8 @@ p {
   }
 }
 .footer-mailing__img {
-  width: 150px;
-  height: auto;
+  width: 100%;
+  object-fit: cover;
   fill: none;
 }
 
