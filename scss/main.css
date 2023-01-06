@@ -355,6 +355,7 @@ p {
 .header-logo__img {
   width: 100%;
   object-fit: cover;
+  max-width: 140px;
 }
 
 .header-nav {
@@ -815,6 +816,7 @@ p {
   width: 100%;
   object-fit: cover;
   fill: none;
+  max-width: 140px;
 }
 
 .footer-wrapper-bg {
