@@ -358,7 +358,7 @@ p {
 .header-logo__img {
   width: 100%;
   object-fit: cover;
-  max-width: 140px;
+  max-width: 135px;
 }
 .header-logo__img--main {
   max-width: 215px;
@@ -822,7 +822,7 @@ p {
   width: 100%;
   object-fit: cover;
   fill: none;
-  max-width: 140px;
+  max-width: 135px;
 }
 
 .footer-wrapper-bg {
