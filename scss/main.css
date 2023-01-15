@@ -1321,6 +1321,14 @@ p {
   padding: 100px 0;
   background-image: url("../img/bg-images/proxi-bg.jpg");
 }
+.product-bg--hardware-1 {
+  padding: 100px 0;
+  background-image: url("../img/bg-images/hardware-1-bg.jpg");
+}
+.product-bg--hardware-2 {
+  padding: 100px 0;
+  background-image: url("../img/bg-images/hardware-2-bg.jpg");
+}
 
 .product-wrapper {
   display: flex;
@@ -1853,6 +1861,138 @@ p {
   line-height: 28px;
   color: #838383;
   margin-bottom: 30px;
+}
+
+.hardware-grid {
+  margin: 60px 0;
+  display: grid;
+  grid-row-gap: 15px;
+}
+
+.hardware-block {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+}
+@media (min-width: 320px) and (max-width: 1023px) {
+  .hardware-block {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+  }
+}
+
+.hardware-icon {
+  background: #2C5BDB;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hardware-icon__icon {
+  width: 52px;
+  height: 52px;
+}
+
+.hardware-title {
+  background: #F2F2F2;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+.hardware-title__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  color: #292D32;
+}
+
+.hardware-wrapper {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+}
+@media (min-width: 320px) and (max-width: 1023px) {
+  .hardware-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+.hardware-info {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  border-left: 2px solid #F2F2F2;
+}
+@media (min-width: 320px) and (max-width: 1023px) {
+  .hardware-info {
+    border-left: 2px solid #F2F2F2;
+    border-right: 2px solid #F2F2F2;
+  }
+}
+.hardware-info__text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 10px;
+  color: #292D32;
+}
+.hardware-info__text:last-child {
+  margin-bottom: 0;
+}
+
+.hardware-status {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media (min-width: 320px) and (max-width: 1023px) {
+  .hardware-status {
+    border-top: 2px solid #F2F2F2;
+  }
+}
+
+.status-block > .status-text:last-child {
+  border-bottom: none;
+}
+
+.status-block {
+  border: 2px solid #F2F2F2;
+  border-bottom: none;
+  border-top: none;
+}
+.status-block:last-child {
+  border-right: none;
+  border-right: 2px solid #F2F2F2;
+}
+.status-block__text {
+  padding: 15px;
+  border-bottom: 2px solid #F2F2F2;
+  border-left: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #292D32;
+}
+.status-block__text:last-child {
+  border-bottom: none;
+}
+
+.hardware-text {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #F2F2F2;
+  padding: 15px;
+}
+.hardware-text__text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #292D32;
+}
+.hardware-text__title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #292D32;
+  margin-bottom: 10px;
 }
 
 /*Abouts-us-pages*/
@@ -3038,6 +3178,45 @@ p {
   position: absolute;
   top: 48px;
   background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.92969 14.4297L11.9997 20.4997L18.0697 14.4297' stroke='%23FFCD66' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M12 3.5L12 20.33' stroke='%23FFCD66' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+}
+
+.prices-hardware {
+  display: grid;
+  grid-template-rows: minmax(auto, 100px) 1fr auto;
+}
+@media (min-width: 320px) and (max-width: 1023px) {
+  .prices-hardware {
+    grid-template-rows: auto 1fr auto;
+  }
+}
+.prices-hardware .prices-body {
+  grid-template-rows: auto 1fr;
+  grid-gap: 0;
+}
+.prices-hardware .prices-body::after {
+  content: none;
+}
+.prices-hardware .prices-body__price {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  text-align: center;
+  color: #292D32;
+}
+.prices-hardware .prices-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-left: 20px;
+}
+.prices-hardware .prices-item-list {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #292D32;
+  list-style-type: disc;
 }
 
 /*iot-pages*/

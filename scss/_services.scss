@@ -124,7 +124,6 @@
     grid-template-rows: auto 1fr auto;
   }
 
-
 }
 
 .prices-heading {
@@ -314,5 +313,42 @@
         background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.92969 14.4297L11.9997 20.4997L18.0697 14.4297' stroke='%23FFCD66' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M12 3.5L12 20.33' stroke='%23FFCD66' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
       }
     }
+  }
+}
+.prices-hardware{
+  display: grid;
+  grid-template-rows: minmax( auto, 100px) 1fr auto;
+  @media (min-width: 320px) and (max-width: 1023px) {
+    grid-template-rows: auto 1fr auto;
+  }
+  .prices-body{
+    grid-template-rows: auto 1fr;
+    grid-gap: 0;
+    &::after{
+      content: none;
+    }
+  }
+  .prices-body__price{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    text-align: center;
+    color: #292D32;
+  }
+  .prices-list{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 20px;
+
+  }
+  .prices-item-list{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #292D32;
+    list-style-type: disc;
   }
 }
